@@ -1,19 +1,19 @@
 declare class Logger {
     static getLogger(title?: string): Logger
 
-    log(logLevel: LoggerEnum.LogLevel, msg: string): void
+    log(logLevel: LoggerEnum.LogLevel, ...msg: any): void
 
-    fatal(msg: string): void
+    fatal(...msg: any): void
 
-    error(msg: string): void
+    error(...msg: any): void
 
-    warn(msg: string): void
+    warn(...msg: any): void
 
-    info(msg: string): void
+    info(...msg: any): void
 
-    debug(msg: string): void
+    debug(...msg: any): void
 
-    trace(msg: string): void
+    trace(...msg: any): void
 
     setLevel(level: LoggerEnum.LogLevel): void
 }
