@@ -10,11 +10,11 @@ declare class CustomForm {
 
     appendToggle(name: string, text: string, defaultVal?: boolean): this
 
-    appendDropdown(name: string, text: string, options: string[], defaultVal?: string): this
+    appendDropdown(name: string, text: string, options: string[], defaultVal?: number): this
 
     appendSlider(name: string, text: string, min: number, max: number, step?: number, defaultVal?: number): this
 
-    appendStepSlider(name: string, text: string, steps: string[], defaultVal?: string): this
+    appendStepSlider(name: string, text: string, steps: string[], defaultVal?: number): this
 
-    sendTo(player: Player, callback?: (olayer: Player, result: Record<string, any> | FormEnum.ModalFormCancelReason) => void): void
+    sendTo(player: Player, callback?: (player: Player, result: Record<string, any> | FormEnum.ModalFormCancelReason) => void): void
 }

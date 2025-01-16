@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /// <reference path="../Event/Listener.d.ts" />
 /// <reference path="../Event/EventEnum.d.ts" />
 /// <reference path="../Player/Player.d.ts" />
@@ -35,7 +36,8 @@ declare namespace EventBus {
     function emplaceListener(event: 'SpawnedMobEvent', callback: (mob: Mob, blockSource: BlockSource, identifier: ActorDefinitionIdentifier, actor: Actor, vec3: Vec3, naturalSpawn: void, surface: boolean, fromSpawner: boolean) => boolean, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'ActorHurtEvent', callback: (actor: Actor, actorDamageSource: ActorDamageSource, damage: number, knock: boolean, ignite: boolean) => boolean, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'MobDieEvent', callback: (mob: Mob, actorDamageSource: ActorDamageSource) => void, priority?: EventEnum.EventPriority): Listener
-    // function emplaceListener(event: "ExecutingCommandEvent", callback: (mob: Mob, blockSource: BlockSource, identifier: ActorDefinitionIdentifier, actor: Actor, vec3: Vec3, naturalSpawn: boolean, surface: boolean, fromSpawner: boolean) => boolean, priority?: EventEnum.EventPriority): Listener; // TODO
+    function emplaceListener(event: 'ExecutingCommandEvent', callback: (commandContext: CommandContext, minecraftCommands: MinecraftCommands, suppressOutput: boolean) => boolean, priority?: EventEnum.EventPriority): Listener
+    function emplaceListener(event: 'ServiceRegisterEvent', callback: (service: Service) => void, priority?: EventEnum.EventPriority): Listener
 
     function removeListener(listener: Listener): boolean
 
