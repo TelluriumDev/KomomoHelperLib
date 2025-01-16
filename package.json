@@ -1,0 +1,34 @@
+{
+    "name": "komomohelperlib",
+    "version": "1.0.0",
+    "description": "KomomoHelpLib",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": {
+        "name": "TelluriumDev",
+        "url": "https://github.com/TelluriumDev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TelluriumDev/KomomoHelperLib"
+    },
+    "bugs": {
+        "url": "https://github.com/TelluriumDev/KomomoHelperLib/issues"
+    },
+    "homepage": "https://github.com/TelluriumDev/KomomoHelperLib#readme",
+    "license": "GPL-3.0-only",
+    "types": "./index.d.ts",
+    "devDependencies": {
+        "@cordisjs/eslint-config": "^1.1.1",
+        "@typescript-eslint/eslint-plugin": "^7.16.0",
+        "@typescript-eslint/parser": "^7.16.0",
+        "eslint": "^8.57.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-jsx-a11y": "^6.9.0",
+        "eslint-plugin-n": "^16.6.2",
+        "eslint-plugin-promise": "^6.4.0",
+        "eslint-plugin-react": "^7.34.3",
+        "eslint-plugin-react-hooks": "^4.6.2"
+    }
+}

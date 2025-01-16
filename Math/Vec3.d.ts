@@ -1,0 +1,2 @@
+declare class Vec3 {
+}
