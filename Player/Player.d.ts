@@ -1,13 +1,15 @@
 /// <reference path="../Player/PlayerEnum.d.ts" />
+/// <reference path="../Player/LayeredAbilities.d.ts" />
 
 /// <reference path="../Math/Vec3.d.ts" />
 
-/// <reference path="../Player/LayeredAbilities.d.ts" />
 /// <reference path="../Container/Container.d.ts" />
 
 /// <reference path="../Actor/Actor.d.ts" />
 /// <reference path="../Actor/Agent.d.ts" />
 /// <reference path="../Actor/ActorUniqueID.d.ts" />
+
+/// <reference path="../Mob/Mob.d.ts" />
 
 /// <reference path="../Item/Item.d.ts" />
 /// <reference path="../Item/ItemStack.d.ts" />
@@ -200,7 +202,7 @@ declare class Player {
 
     is2DPositionRelevant(dimension: any, position: BlockPos): any
 
-    isHiddenFrom(target: any): any
+    isHiddenFrom(target: Mob): any
 
     isItemOnCooldown(type: any): any
 
@@ -334,7 +336,7 @@ declare class Player {
 
     static checkNeedAutoJump(region: any, aabbShape: any, actorRotation: any, movementSpeed: number, stateVector: any, collisionShapeInterface: any, inputMoveX: number, inputMoveZ: number): any
 
-    static getCustomHurtSound(mob: any, cause: any): any
+    static getCustomHurtSound(mob: Mob, cause: any): any
 
     static isDangerousVolumeForSpawn(region: any, centeredAABB: any): any
 
