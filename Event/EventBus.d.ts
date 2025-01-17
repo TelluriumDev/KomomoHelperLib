@@ -10,7 +10,7 @@ declare namespace EventBus {
     function emplaceListener(event: 'ServerStoppingEvent', callback: () => void, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'PlayerAddExperienceEvent', callback: (player: Player, experience: number) => boolean, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'PlayerAttackEvent', callback: (player: Player, actor: Actor, actorDamageCause: PlayerEnum.ActorDamageCause) => boolean, priority?: EventEnum.EventPriority): Listener
-    function emplaceListener(event: 'PlayerChangePermEvent', callback: (player: Player, newPerm: PlayerEnum.CommandPermissionLevel) => boolean, priority?: EventEnum.EventPriority): Listener
+    function emplaceListener(event: 'PlayerChangePermEvent', callback: (player: Player, newPerm: CommandEnum.CommandPermissionLevel) => boolean, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'PlayerChatEvent', callback: (player: Player, message: string) => boolean, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'PlayerConnectEvent', callback: (networkIdentifier: any, connectionRequest: any) => boolean, priority?: EventEnum.EventPriority): Listener // TODO
     function emplaceListener(event: 'PlayerDestroyBlockEvent', callback: (player: Player, blockpos: BlockPos) => boolean, priority?: EventEnum.EventPriority): Listener
