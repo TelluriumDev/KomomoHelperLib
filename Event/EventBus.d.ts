@@ -6,6 +6,13 @@
 
 declare namespace EventBus {
 
+    /**
+     * 添加事件监听器
+     * @param event 事件名
+     * @param callback 回调函数
+     * @param priority 优先级
+     */
+    function emplaceListener(event: string, callback: Function, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'ServerStartedEvent', callback: () => void, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'ServerStoppingEvent', callback: () => void, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'PlayerAddExperienceEvent', callback: (player: Player, experience: number) => boolean, priority?: EventEnum.EventPriority): Listener
