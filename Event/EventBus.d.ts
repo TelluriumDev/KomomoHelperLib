@@ -11,6 +11,7 @@ declare namespace EventBus {
      * @param event 事件名
      * @param callback 回调函数
      * @param priority 优先级
+     * @returns 监听器
      */
     function emplaceListener(event: string, callback: Function, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'ServerStartedEvent', callback: () => void, priority?: EventEnum.EventPriority): Listener
@@ -46,6 +47,10 @@ declare namespace EventBus {
     function emplaceListener(event: 'ExecutingCommandEvent', callback: (commandContext: CommandContext, minecraftCommands: MinecraftCommands, suppressOutput: boolean) => boolean, priority?: EventEnum.EventPriority): Listener
     function emplaceListener(event: 'ServiceRegisterEvent', callback: (service: Service) => void, priority?: EventEnum.EventPriority): Listener
 
+    /**
+     * 移除监听器
+     * @param listener 监听器
+     */
     function removeListener(listener: Listener): boolean
 
 }

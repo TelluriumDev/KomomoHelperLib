@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 
-/** 命令类 不可构造 */
-declare class Command {
+/** 命令类 */
+declare abstract class Command {
     /**
      * 创建命令
      * @param name 命令名

@@ -18,79 +18,79 @@
 /// <reference path="../Block/BlockSource.d.ts" />
 /// <reference path="../Block/BlockPos.d.ts" />
 
-declare class Player {
-    xuid: string | undefined
-    uuid: string | undefined
-    realName: string | undefined
-    name: string | undefined
-    IPAndPort: string | undefined
-    localeCode: string | undefined
-    shadowRadius: number | undefined
-    speed: number | undefined
-    userId: number | undefined
-    itemUseDuration: number | undefined
-    itemUseStartupProgress: number | undefined
-    itemUseIntervalProgress: number | undefined
-    maxChunkBuildRadius: number | undefined
-    blockedUsingDamagedShieldTimeStamp: number | undefined
-    blockedUsingShieldTimeStamp: number | undefined
-    blockingStartTimeStamp: number | undefined
-    chunkRadius: number | undefined
-    direction: number | undefined
-    enchantmentSeed: number | undefined
-    luck: number | undefined
-    mapIndex: number | undefined
-    maxItemCooldownLeft: number | undefined
-    interactText: string | undefined
-    playerIndex: number | undefined
-    playerLevel: number | undefined
-    selectedItemSlot: number | undefined
-    playerSessionId: string
-    platformOnlineId: string
-    serverId: string | undefined
-    sleepRotation: number | undefined
-    usedPotion: number | undefined
-    xpEarnedAtCurrentLevel: number | undefined
-    xpNeededForNextLevel: number | undefined
-    isLoading: boolean | undefined
-    isPlayerInitialized: boolean | undefined
-    isImmobile: boolean | undefined
-    isSleeping: boolean | undefined
-    isTeacher: boolean | undefined
-    isSimulated: boolean | undefined
-    isFireImmune: boolean | undefined
-    isInTrialMode: boolean | undefined
-    isBlocking: boolean | undefined
-    isSilentObserver: boolean | undefined
-    isEmoting: boolean | undefined
-    isFlying: boolean | undefined
-    isForcedRespawn: boolean | undefined
-    isHostingPlayer: boolean | undefined
-    isHungry: boolean | undefined
-    isHurt: boolean | undefined
-    isInRaid: boolean | undefined
-    isRespawningFromTheEnd: boolean | undefined
-    isSleepingLongEnough: boolean | undefined
-    isSpawned: boolean | undefined
-    isUsingItem: boolean | undefined
-    isValidSpawn: boolean | undefined
-    canStartSleepInBed: boolean | undefined
-    canExistWhenDisallowMob: boolean | undefined
-    canFreeze: boolean | undefined
-    canChangeDimensionsUsingPortal: boolean | undefined
-    canInteractWithOtherEntitiesInGame: boolean | undefined
-    canObstructSpawningAndBlockPlacement: boolean | undefined
-    canBeSeenOnMap: boolean | undefined
-    canJump: boolean | undefined
-    canOpenContainerScreen: boolean | undefined
-    canSleep: boolean | undefined
-    canUseOperatorBlocks: boolean | undefined
-    hasDiedBefore: boolean | undefined
-    hasBedPosition: boolean | undefined
-    hasOpenContainer: boolean | undefined
-    hasOwnedChunkSource: boolean | undefined
-    hasRespawnAnchorPosition: boolean | undefined
-    hasRespawnPosition: boolean | undefined
+declare abstract class Player {
+    readonly xuid: string | undefined
+    readonly uuid: string | undefined
+    readonly realName: string | undefined
+    readonly name: string | undefined
+    readonly IPAndPort: string | undefined
+    readonly localeCode: string | undefined
+    readonly shadowRadius: number | undefined
+    readonly speed: number | undefined
+    readonly userId: number | undefined
+    readonly itemUseDuration: number | undefined
+    readonly itemUseStartupProgress: number | undefined
+    readonly itemUseIntervalProgress: number | undefined
+    readonly maxChunkBuildRadius: number | undefined
+    readonly blockedUsingDamagedShieldTimeStamp: number | undefined
+    readonly blockedUsingShieldTimeStamp: number | undefined
+    readonly blockingStartTimeStamp: number | undefined
+    readonly chunkRadius: number | undefined
+    readonly enchantmentSeed: number | undefined
+    readonly direction: number | undefined
+    readonly luck: number | undefined
+    readonly mapIndex: number | undefined
+    readonly maxItemCooldownLeft: number | undefined
+    readonly interactText: string | undefined
+    readonly playerIndex: number | undefined
+    readonly playerLevel: number | undefined
+    readonly selectedItemSlot: number | undefined
+    readonly playerSessionId: string
+    readonly platformOnlineId: string
+    readonly serverId: string | undefined
+    readonly sleepRotation: number | undefined
+    readonly usedPotion: number | undefined
+    readonly xpEarnedAtCurrentLevel: number | undefined
+    readonly xpNeededForNextLevel: number | undefined
+    readonly isLoading: boolean | undefined
+    readonly isPlayerInitialized: boolean | undefined
+    readonly isImmobile: boolean | undefined
+    readonly isSleeping: boolean | undefined
+    readonly isTeacher: boolean | undefined
+    readonly isSimulated: boolean | undefined
+    readonly isFireImmune: boolean | undefined
+    readonly isInTrialMode: boolean | undefined
+    readonly isBlocking: boolean | undefined
+    readonly isSilentObserver: boolean | undefined
+    readonly isEmoting: boolean | undefined
+    readonly isFlying: boolean | undefined
+    readonly isForcedRespawn: boolean | undefined
+    readonly isHostingPlayer: boolean | undefined
+    readonly isHungry: boolean | undefined
+    readonly isHurt: boolean | undefined
+    readonly isInRaid: boolean | undefined
+    readonly isRespawningFromTheEnd: boolean | undefined
+    readonly isSleepingLongEnough: boolean | undefined
+    readonly isSpawned: boolean | undefined
+    readonly isUsingItem: boolean | undefined
+    readonly isValidSpawn: boolean | undefined
+    readonly canStartSleepInBed: boolean | undefined
+    readonly canExistWhenDisallowMob: boolean | undefined
+    readonly canFreeze: boolean | undefined
+    readonly canChangeDimensionsUsingPortal: boolean | undefined
+    readonly canInteractWithOtherEntitiesInGame: boolean | undefined
+    readonly canObstructSpawningAndBlockPlacement: boolean | undefined
+    readonly canBeSeenOnMap: boolean | undefined
+    readonly canJump: boolean | undefined
+    readonly canOpenContainerScreen: boolean | undefined
+    readonly canSleep: boolean | undefined
+    readonly canUseOperatorBlocks: boolean | undefined
+    readonly hasDiedBefore: boolean | undefined
+    readonly hasBedPosition: boolean | undefined
+    readonly hasOpenContainer: boolean | undefined
+    readonly hasOwnedChunkSource: boolean | undefined
+    readonly hasRespawnAnchorPosition: boolean | undefined
+    readonly hasRespawnPosition: boolean | undefined
 
     disconnect(reason: string): boolean | undefined
 

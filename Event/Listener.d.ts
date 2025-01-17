@@ -1,3 +1,3 @@
-declare class Listener {
+declare abstract class Listener {
 
 }
