@@ -33,4 +33,14 @@ declare namespace Mod {
      * 获取当前模组的日志
      */
     function getLogger(): Logger
+
+    /**
+     * 获取模组的根目录
+     */
+    function getModRootDir(): string
+
+    /**
+     * 获取根目录
+     */
+    function getRootDir(): string
 }

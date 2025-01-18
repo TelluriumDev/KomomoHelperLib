@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+/// <reference path="./CommonEnum.d.ts" />
 
 /** 命令类 */
 declare abstract class Command {
@@ -79,4 +80,9 @@ declare abstract class Command {
      * @param values 枚举值
      */
     removeSoftEnum(name: string, values: string[]): void
+
+    /**
+     * 执行控制台命令
+     */
+    static run(command: string): boolean
 }
