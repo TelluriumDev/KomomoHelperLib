@@ -1,1 +1,1 @@
-declare class Mob { }
+declare class Mob extends Actor { }

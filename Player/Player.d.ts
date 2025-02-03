@@ -1,24 +1,9 @@
 /// <reference path="../Player/PlayerEnum.d.ts" />
 /// <reference path="../Player/LayeredAbilities.d.ts" />
+/// <reference path="../Player/GameMode.d.ts" />
+/// <reference path="../Player/ActorDamageSource.d.ts" />
 
-/// <reference path="../Math/Vec3.d.ts" />
-
-/// <reference path="../Container/Container.d.ts" />
-
-/// <reference path="../Actor/Actor.d.ts" />
-/// <reference path="../Actor/Agent.d.ts" />
-/// <reference path="../Actor/ActorUniqueID.d.ts" />
-
-/// <reference path="../Mob/Mob.d.ts" />
-
-/// <reference path="../Item/Item.d.ts" />
-/// <reference path="../Item/ItemStack.d.ts" />
-
-/// <reference path="../Block/Block.d.ts" />
-/// <reference path="../Block/BlockSource.d.ts" />
-/// <reference path="../Block/BlockPos.d.ts" />
-
-declare abstract class Player {
+declare abstract class Player extends Mob {
     readonly xuid: string | undefined
     readonly uuid: string | undefined
     readonly realName: string | undefined

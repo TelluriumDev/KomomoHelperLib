@@ -11,7 +11,7 @@ declare abstract class ModalForm {
      * 设置内容
      * @param text 内容
      */
-    setContent(content: string): this
+    setContent(text: string): this
 
     /**
      * 设置上按钮

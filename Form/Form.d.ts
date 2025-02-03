@@ -1,6 +1,7 @@
 /// <reference path="../Form/CustomForm.d.ts" />
 /// <reference path="../Form/SimpleForm.d.ts" />
 /// <reference path="../Form/ModalForm.d.ts" />
+/// <reference path="../Form/FormEnum.d.ts" />
 
 declare namespace Form {
     /**

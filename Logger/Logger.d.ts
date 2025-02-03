@@ -1,3 +1,5 @@
+/// <reference path= "../Logger/LoggerEnum.d.ts" />
+
 declare abstract class Logger {
     /**
      * 获取 Logger 实例

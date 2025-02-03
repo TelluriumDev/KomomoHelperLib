@@ -1,5 +1,8 @@
-/* eslint-disable max-len */
-/// <reference path="./CommonEnum.d.ts" />
+/// <reference path="../Command/CommandEnum.d.ts" />
+/// <reference path="../Command/CommandContext.d.ts" />
+/// <reference path="../Command/CommandOrigin.d.ts" />
+/// <reference path="../Command/CommandOutput.d.ts" />
+/// <reference path="../Command/MinecraftCommands.d.ts" />
 
 /** 命令类 */
 declare abstract class Command {
