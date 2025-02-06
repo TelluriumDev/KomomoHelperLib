@@ -19,8 +19,8 @@ declare namespace CommandEnum {
         NotCheat = 1 << 7,
         Async = 1 << 8,
         NoEditor = 1 << 9,
-        // Hidden = HiddenFromPlayerOrigin | HiddenFromCommandBlockOrigin,
-        // Removed = Hidden | HiddenFromAutomationOrigin,
+        Hidden = HiddenFromPlayerOrigin | HiddenFromCommandBlockOrigin,
+        Removed = Hidden | HiddenFromAutomationOrigin,
     }
     enum ParamKindKind {
         Int = 0,

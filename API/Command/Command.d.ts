@@ -1,8 +1,8 @@
-/// <reference path="../Command/CommandEnum.d.ts" />
-/// <reference path="../Command/CommandContext.d.ts" />
-/// <reference path="../Command/CommandOrigin.d.ts" />
-/// <reference path="../Command/CommandOutput.d.ts" />
-/// <reference path="../Command/MinecraftCommands.d.ts" />
+/// <reference path="./CommandEnum.d.ts" />
+/// <reference path="./CommandContext.d.ts" />
+/// <reference path="./CommandOrigin.d.ts" />
+/// <reference path="./CommandOutput.d.ts" />
+/// <reference path="./MinecraftCommands.d.ts" />
 
 /** 命令类 */
 declare abstract class Command {
@@ -25,7 +25,7 @@ declare abstract class Command {
      * 设置命令回调
      * @param callback 回调函数
      */
-    setCallback(callback: (command: Command, commandOrigin: CommandOrigin, commandOutput: CommandOutput, args: Record<string, any>) => void): boolean
+    setCallback(callback: (command: Command, commandOrigin: CommandOrigin, commandOutput: CommandOutput, args: Record<string, any>) => void): void
 
     /**
      * 设置可选参数

@@ -1,0 +1,1 @@
+declare abstract class DimensionType { }

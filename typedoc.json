@@ -2,5 +2,5 @@
     "entryPoints": ["./**"], // 指定入口文件
     "out": "../Docs", // 指定输出目录
     "theme": "default", // 使用默认主题
-    // "plugin": ["typedoc-plugin-markdown"]
+    "plugin": ["typedoc-plugin-markdown"]
 }
