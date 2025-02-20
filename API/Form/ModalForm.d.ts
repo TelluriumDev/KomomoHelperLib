@@ -28,13 +28,13 @@ declare abstract class ModalForm {
     /**
      * 发送给玩家
      * @param player 玩家
-     * @param reasen 回调函数
+     * @param callback 回调函数
      */
-    sendTo(player: Player, reasen?:
+    sendTo(player: Player, callback?:
         /**
          * 回调函数
-         * @param payer 玩家
-         * @param reason 回调参数
+         * @param player 玩家
+         * @param result 回调参数
          */
-        (payer: Player, reason: boolean | FormEnum.ModalFormCancelReason) => {}): boolean
+        (player: Player, result: boolean | FormEnum.ModalFormCancelReason) => void): boolean
 }
